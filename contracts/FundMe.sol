@@ -25,7 +25,7 @@ contract FundMe {
     }
 
     function fund() public payable {
-        // ve buraya s_priceFeed girmemiz gerekiyor
+        
         require(
             msg.value.getConversionRate(s_priceFeed) >= MINIMUM_USD,
             "Did not send enough"
