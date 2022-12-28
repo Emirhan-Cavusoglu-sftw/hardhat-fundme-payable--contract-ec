@@ -16,7 +16,7 @@ contract FundMe {
     mapping(address => uint256) private s_addressToAmountFunded;
 
     address private i_owner;
-    // price feed yazdık
+    
     AggregatorV3Interface private s_priceFeed;
 
     constructor(address s_priceFeedAdress) {
